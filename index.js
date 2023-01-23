@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.use(require('./routes/user.route'))
 app.use(require('./routes/twitt.route'))
-
+app.use(require('./routes/comments.route'))
 
 mongoose
   .connect("mongodb+srv://khasiev:malsy1999@cluster0.yzc6knt.mongodb.net/twitter")
